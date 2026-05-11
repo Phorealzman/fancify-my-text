@@ -1,16 +1,16 @@
 
-function bigButton(){
+function Bigger(){ <!-- Handles all the backend regarding Bigger button -->
     alert("Hello, world!");
 
-    let textBox = document.getElementById("textInput");
+    let textBox = document.getElementById("textInput"); 
     textBox.style.fontSize = "24pt";
 }
 
-function applyStyle(){
+function applyStyle(){ <!-- Handles the backend for the BoringBetty button and FancyShmancy button -->
     let textBox = document.getElementById("textInput");
     let fancy = document.getElementById("fancy");
 
-    if(fancy.checked){
+    if(fancy.checked){ <-- If fancy button is checked, then apply the style otherwise, if boring button is pressed, reset the styles -->
         alert("FancyShmancy has been chosen");
 
         textBox.style.fontWeight = "bold";
@@ -25,7 +25,7 @@ function applyStyle(){
     }
 }
 
-function mooButton(){
+function Moo(){ <!-- Handles backend functionality of the Moo button -->
     
 
     let textBox = document.getElementById("textInput");
@@ -34,7 +34,7 @@ function mooButton(){
 
     let sentence = upperText.split(".");
 
-    for (i = 0; i < sentence.length; i++) {
+    for (i = 0; i < sentence.length; i++) { <!-- for loop that checks the length of the user inputted text and then capitalizes it and then adds -MOO -->
         let word = sentence[i].trim().split(" ");
 
         if (word.length > 0 && word[0] !== ""){
