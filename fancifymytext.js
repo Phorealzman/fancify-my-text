@@ -10,7 +10,7 @@ function applyStyle(){ <!-- Handles the backend for the BoringBetty button and F
     let textBox = document.getElementById("textInput");
     let fancy = document.getElementById("fancy");
 
-    if(fancy.checked){ <-- If fancy button is checked, then apply the style otherwise, if boring button is pressed, reset the styles -->
+    if(fancy.checked){ <!-- If fancy button is checked, then apply the style otherwise, if boring button is pressed, reset the styles -->
         alert("FancyShmancy has been chosen");
 
         textBox.style.fontWeight = "bold";
