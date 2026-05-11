@@ -1,16 +1,16 @@
 
-function Bigger(){ <!-- Handles all the backend regarding Bigger button -->
+function Bigger(){ //Handles all the backend regarding Bigger button 
     alert("Hello, world!");
 
     let textBox = document.getElementById("textInput"); 
     textBox.style.fontSize = "24pt";
 }
 
-function applyStyle(){ <!-- Handles the backend for the BoringBetty button and FancyShmancy button -->
+function applyStyle(){  //Handles the backend for the BoringBetty button and FancyShmancy button
     let textBox = document.getElementById("textInput");
     let fancy = document.getElementById("fancy");
 
-    if(fancy.checked){ <!-- If fancy button is checked, then apply the style otherwise, if boring button is pressed, reset the styles -->
+    if(fancy.checked){ //If fancy button is checked, then apply the style otherwise, if boring button is pressed, reset the styles 
         alert("FancyShmancy has been chosen");
 
         textBox.style.fontWeight = "bold";
@@ -25,7 +25,7 @@ function applyStyle(){ <!-- Handles the backend for the BoringBetty button and F
     }
 }
 
-function Moo(){ <!-- Handles backend functionality of the Moo button -->
+function Moo(){ //Handles backend functionality of the Moo button 
     
 
     let textBox = document.getElementById("textInput");
